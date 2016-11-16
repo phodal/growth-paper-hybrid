@@ -7,6 +7,10 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
+  mySlideOptions = {
+    initialSlide: 1,
+    loop: true
+  };
 
   constructor(public navCtrl: NavController) {
 
