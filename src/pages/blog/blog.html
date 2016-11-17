@@ -7,7 +7,7 @@
 </ion-header>
 
 <ion-content>
-  <ion-card *ngFor="let blog of blogs; let i = index; trackBy: index">
+  <ion-card *ngFor="let blog of blogs; let i = index; trackBy: index" (click)="gotoBlogDetail(blog.id)">
     <ion-card-content>
       <h2 class="card-title">
         {{blog.title}}

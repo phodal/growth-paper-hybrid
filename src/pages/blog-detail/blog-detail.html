@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      博客详情
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div *ngIf="blog">
+    <h2>
+      {{blog.title}}
+    </h2>
+    <p>
+      {{blog.body}}
+    </p>
+  </div>
+</ion-content>

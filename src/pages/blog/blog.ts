@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import {Http} from "@angular/http";
 import 'rxjs/add/operator/map';
+import {BlogDetailPage} from "../blog-detail/blog-detail";
 
 @Component({
   selector: 'page-blog',
@@ -17,6 +18,12 @@ export class BlogPage {
       .subscribe(data => {
         this.blogs = data['results'];
       });
+  }
+
+  gotoBlogDetail(blogId){
+    this.navCtrl.push(BlogDetailPage, {
+      blogId: blogId
+    });
   }
 
 }

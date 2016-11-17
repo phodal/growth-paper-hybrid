@@ -5,12 +5,14 @@ import { AboutPage } from '../pages/about/about';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import {BlogPage} from "../pages/blog/blog";
+import {BlogDetailPage} from "../pages/blog-detail/blog-detail";
 
 @NgModule({
   declarations: [
     MyApp,
     AboutPage,
     BlogPage,
+    BlogDetailPage,
     HomePage,
     TabsPage
   ],
@@ -22,6 +24,7 @@ import {BlogPage} from "../pages/blog/blog";
     MyApp,
     AboutPage,
     BlogPage,
+    BlogDetailPage,
     HomePage,
     TabsPage
   ],
