@@ -7,5 +7,14 @@
 </ion-header>
 
 <ion-content>
-
+  <ion-card *ngFor="let blog of blogs; let i = index; trackBy: index">
+    <ion-card-content>
+      <h2 class="card-title">
+        {{blog.title}}
+      </h2>
+      <p>
+        {{blog.body}}
+      </p>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
