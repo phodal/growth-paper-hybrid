@@ -6,6 +6,7 @@ import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import {BlogPage} from "../pages/blog/blog";
 import {BlogDetailPage} from "../pages/blog-detail/blog-detail";
+import {CenterPage} from "../pages/center/center";
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import {BlogDetailPage} from "../pages/blog-detail/blog-detail";
     BlogPage,
     BlogDetailPage,
     HomePage,
+    CenterPage,
     TabsPage
   ],
   imports: [
@@ -26,6 +28,7 @@ import {BlogDetailPage} from "../pages/blog-detail/blog-detail";
     BlogPage,
     BlogDetailPage,
     HomePage,
+    CenterPage,
     TabsPage
   ],
   providers: []
