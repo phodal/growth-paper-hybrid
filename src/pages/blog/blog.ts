@@ -36,7 +36,6 @@ export class BlogPage {
           this.hasNext = true;
           this.nextUrl = data['next'];
         }
-        console.log(this.hasNext);
         for (var i = 0; i < data['results'].length; i++) {
           this.blogs.push(data['results'][i]);
         }
