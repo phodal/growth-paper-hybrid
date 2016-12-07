@@ -4,15 +4,15 @@ import { MyApp } from './app.component';
 import { AboutPage } from '../pages/about/about';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
-import {BlogPage} from "../pages/blog/blog";
 import {BlogDetailPage} from "../pages/blog-detail/blog-detail";
 import {CenterPage} from "../pages/center/center";
+import {BlogListPage} from "../pages/blog-list/blog-list";
 
 @NgModule({
   declarations: [
     MyApp,
     AboutPage,
-    BlogPage,
+    BlogListPage,
     BlogDetailPage,
     HomePage,
     CenterPage,
@@ -25,7 +25,7 @@ import {CenterPage} from "../pages/center/center";
   entryComponents: [
     MyApp,
     AboutPage,
-    BlogPage,
+    BlogListPage,
     BlogDetailPage,
     HomePage,
     CenterPage,
