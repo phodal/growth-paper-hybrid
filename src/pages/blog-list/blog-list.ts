@@ -12,10 +12,6 @@ export class BlogListPage {
   public blogs;
 
   constructor(public navCtrl: NavController, public http: Http) {
-    this.http = http;
-  }
-
-  ionViewDidLoad(){
     let url = 'http://localhost:8000/api/blog/';
     this.http.get(url)
       .map(res => res.json())
