@@ -1,12 +1,9 @@
 page-home {
   ion-slides {
-    $slide-height: 20rem;
+    height: 20rem;
 
-    height: $slide-height;
-
-    .swiper-slide {
+    ion-slide {
       background-color: #777;
-      height: $slide-height;
       padding: 1rem;
       color: #fff;
     }
