@@ -10,7 +10,7 @@ export class HomePage {
   public mySlideOptions = {
     pager:true,
     speed: 7000,
-    autoplay: true,
+    autoplay: 1000,
     loop: true
   };
 
