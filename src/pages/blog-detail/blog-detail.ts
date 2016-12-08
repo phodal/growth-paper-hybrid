@@ -8,7 +8,7 @@ import "rxjs/add/operator/map";
   templateUrl: 'blog-detail.html'
 })
 export class BlogDetailPage {
-  private blog;
+  public blog;
 
   constructor(public navCtrl: NavController,public http:Http, public navParams:NavParams) {
     let blogId = navParams["data"]["blogId"];

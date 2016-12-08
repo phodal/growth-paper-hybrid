@@ -8,7 +8,7 @@ import {Http} from "@angular/http";
   templateUrl: 'center.html'
 })
 export class CenterPage {
-  private user = {
+  public user = {
     name: '',
     password: ''
   };

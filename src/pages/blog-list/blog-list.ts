@@ -9,7 +9,7 @@ import {BlogDetailPage} from "../blog-detail/blog-detail";
   templateUrl: 'blog-list.html'
 })
 export class BlogListPage {
-  private blogs;
+  public blogs;
 
   constructor(public navCtrl: NavController, public http: Http) {
     this.http = http;

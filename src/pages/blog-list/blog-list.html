@@ -7,7 +7,7 @@
 </ion-header>
 
 <ion-content>
-  <ion-card *ngFor="let blog of blogs; let i = index; trackBy: index" (click)="gotoBlogDetail(blog.id)">
+  <ion-card *ngFor="let blog of blogs" (click)="gotoBlogDetail(blog.id)">
     <ion-card-content>
       <h2 class="card-title">
         {{blog.title}}
@@ -17,10 +17,4 @@
       </p>
     </ion-card-content>
   </ion-card>
-
-  <ion-infinite-scroll (ionInfinite)="doInfinite($event)" [enabled]="hasNext">
-    <ion-infinite-scroll-content>
-
-    </ion-infinite-scroll-content>
-  </ion-infinite-scroll>
 </ion-content>
