@@ -9,7 +9,7 @@ import { NavController } from 'ionic-angular';
 export class HomePage {
   public mySlideOptions = {
     pager:true,
-    speed: 4000,
+    speed: 7000,
     autoplay: true,
     loop: true
   };
