@@ -12,9 +12,15 @@ export class CenterPage {
     name: '',
     password: ''
   };
+  public isLogin = false;
 
   constructor(public navCtrl: NavController, private http: Http, public storage: Storage) {
-
+    this.storage.get('token').then( (value:any) => {
+      if(value.token) {
+        console.log(value);
+        this.isLogin = true;
+      }
+    });
   }
 
   loginForm() {
@@ -27,6 +33,7 @@ export class CenterPage {
       .map(response => response.json())
       .subscribe(
         data => {
+          this.isLogin = true;
           this.storage.set('token', data["token"]);
         });
   }
