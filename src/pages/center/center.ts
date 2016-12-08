@@ -1,7 +1,7 @@
-import {Component} from '@angular/core';
-
-import {NavController, Events} from 'ionic-angular';
+import {Component} from "@angular/core";
+import {NavController} from "ionic-angular";
 import {Http} from "@angular/http";
+import {Storage} from '@ionic/storage';
 
 @Component({
   selector: 'page-center',
@@ -13,13 +13,11 @@ export class CenterPage {
     password: ''
   };
 
-  constructor(public navCtrl: NavController, private events: Events, private http: Http) {
-    this.events = events;
-    this.http = http;
+  constructor(public navCtrl: NavController, private http: Http, public storage: Storage) {
+
   }
 
   loginForm() {
-    var self = this;
     let data = {
       username: this.user.name,
       password: this.user.password
@@ -29,11 +27,7 @@ export class CenterPage {
       .map(response => response.json())
       .subscribe(
         data => {
-          self.events.publish("user:login", data);
-        },
-        error => {
-          self.events.publish("user:login:error");
-        }
-      );
+          this.storage.set('token', data["token"]);
+        });
   }
 }

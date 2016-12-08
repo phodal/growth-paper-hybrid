@@ -7,6 +7,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import {BlogDetailPage} from "../pages/blog-detail/blog-detail";
 import {CenterPage} from "../pages/center/center";
 import {BlogListPage} from "../pages/blog-list/blog-list";
+import { Storage } from '@ionic/storage';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,6 @@ import {BlogListPage} from "../pages/blog-list/blog-list";
     CenterPage,
     TabsPage
   ],
-  providers: []
+  providers: [Storage]
 })
 export class AppModule {}
