@@ -8,6 +8,7 @@ import {BlogDetailPage} from "../pages/blog-detail/blog-detail";
 import {CenterPage} from "../pages/center/center";
 import {BlogListPage} from "../pages/blog-list/blog-list";
 import { Storage } from '@ionic/storage';
+import {AUTH_PROVIDERS} from "angular2-jwt";
 
 @NgModule({
   declarations: [
@@ -32,6 +33,9 @@ import { Storage } from '@ionic/storage';
     CenterPage,
     TabsPage
   ],
-  providers: [Storage]
+  providers: [
+    Storage,
+    AUTH_PROVIDERS
+  ]
 })
 export class AppModule {}
