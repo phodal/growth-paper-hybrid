@@ -13,26 +13,26 @@
   <form (ngSubmit)="loginForm()" [hidden]="isLogin">
     <ion-item>
       <ion-label>Name</ion-label>
-      <ion-input type="text" [(ngModel)]="user.name" name="name"></ion-input>
+      <ion-input type="text" [(ngModel)]="user.name" name="name" required></ion-input>
     </ion-item>
     <ion-item>
       <ion-label>Password</ion-label>
-      <ion-input type="password" [(ngModel)]="user.password" name="password"></ion-input>
+      <ion-input type="password" [(ngModel)]="user.password" name="password" required></ion-input>
     </ion-item>
     <button ion-button type="submit" block>Login</button>
   </form>
   <form (ngSubmit)="createBlogForm()" [hidden]="!isLogin">
     <ion-item>
       <ion-label>标题</ion-label>
-      <ion-input type="text" [(ngModel)]="blog.title" name="title"></ion-input>
+      <ion-input type="text" [(ngModel)]="blog.title" name="title" required></ion-input>
     </ion-item>
     <ion-item>
       <ion-label>Slug</ion-label>
-      <ion-input type="text" [(ngModel)]="blog.slug" name="slug"></ion-input>
+      <ion-input type="text" [(ngModel)]="blog.slug" name="slug" required></ion-input>
     </ion-item>
     <ion-item>
       <ion-label>内容</ion-label>
-      <ion-textarea [(ngModel)]="blog.body" name="body"></ion-textarea>
+      <ion-textarea [(ngModel)]="blog.body" name="body" required></ion-textarea>
     </ion-item>
     <button ion-button type="submit" block>创建</button>
   </form>
