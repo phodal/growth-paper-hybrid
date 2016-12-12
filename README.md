@@ -1,7 +1,24 @@
-Growth Hybrid Hybird
+Growth Hybrid 
 ===
 
 > A Simple demo with blog & blogs app
+
+《Growth：全栈 Web 开发思想》 移动应用代码
+
+使用
+---
+
+添加平台
+
+```
+ionic platform add android
+```
+
+Run
+
+```
+ionic run android
+```
 
 
 License
