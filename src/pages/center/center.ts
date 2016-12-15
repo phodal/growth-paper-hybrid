@@ -30,7 +30,6 @@ export class CenterPage {
     this.storage.get('token').then( (token:any) => {
       if(token) {
         this.token = token;
-        console.log(this.jwtHelper.getTokenExpirationDate(token));
         if(this.jwtHelper.isTokenExpired(token)){
           this.isLogin = false;
           return;
@@ -63,7 +62,8 @@ export class CenterPage {
   }
 
   createBlogForm() {
-    if(this.jwtHelper.isTokenExpired(this.token)){
+    let isTokenExpired = this.jwtHelper.isTokenExpired(this.token);
+    if(isTokenExpired){
       this.isLogin = false;
       return;
     }
